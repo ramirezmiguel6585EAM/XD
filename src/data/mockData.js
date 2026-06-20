@@ -5,7 +5,7 @@ export const initialSellers = [
     rating: 4.9,
     reviewsCount: 124,
     isVerified: true,
-    avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aYw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60",
     responseTime: "Typically responds in 10 mins",
     bio: "Hey there! I frequently sell high-quality office furniture and electronics. I am based in Brooklyn and prefer public meetups near subway stations.",
     reviews: [
@@ -110,19 +110,19 @@ export const initialProducts = [
     timeListed: "Listed 2 hours ago",
     views: 42,
     images: [
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAtxf8NPDfX-KbPwO-zogGiFjF7O1mIjIxR5reO4_2zEh8nDXxqEg605nGbo7yd8a_VSXokg060RayWLjQ1lsTRlDudS7TcETx1pyaFcwQ4rBs5IIL0SQJXm9-6v_Ybu25e7QYv1xpiy_NhsD3oLznW7KM7wXnGGJ8wcYW0B7sC46iARMRU2xU-DhWkESN9QvO5BQyQcr_Yzvo7GGv46Zui9cBKPWRDD1vyDLCYe6YkMJ0MkgoKrD9Lc8QOQ-wSqBquix2VXFomPwJY",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDnAevLPLG5f9kjGdcb46_89S_SXnFJpp23VNFJlddfS5UXoezWcKcQNgT4x1N3Bitf1Xo2iAtVhvWJq8Ffd5n4FxnUZJoEKhag25Onf2V0F_EZM5_QXVWu7cR4JfYxIVBM8OIlM3PpNG6_wfN7sahIfKDeyEGHTc6JDwb2P24gJaMdFgfDYl_Cz0PivFeFDjTjhuRBo7PnnuKaa-XdgCs7we1ZeBChKNdg0VKjgTV0Swaj_DmNFREygaEGhb8MH-DgASLm4Y4ED3xC",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCnIlF5mE7g-rFehXyG24yFD1H8OEgS6Eb1ly56G9ObfV61mhumC_TR4oQqMqaBigJZnX75cDjirtlQ8F17nAEOoTPUspHf7bVC8Lq_Xb7marGJJfcwRtO6WotZVQ-Dqhvol1OCHH1lwAqMO0Jj4gbGOLygYUd_zHKjSKLO4W8JU5VIIApQRim-Mgv87Q3WqnTEgmgN99uP8bZ3gB89wkKQTC9HAJx_l2DBM1uKg_cUhJp3RZ8eOPJn54Rv0jRQKHb4deT6d35TAblo",
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCyTJDC1zixIKkTXcWLmadAtw8zokr1dMJ715oxY-8kHU8eKIA_130sI7z6JynuImQHzTyZe0piaFaY6IBCsrj9rMePwJDXatL2CFOGUTK3EJdwnPGYaTbjPeu9y8wNcfyqSyPBul51L-fKifSpPc-JmsoChP5TSXpUCpaia4PQV8-qnjBFIOz59gx019rxUeigSOP0xgMwwuk_21qutGwgDpX6FKqppUz2N3H2t7NPBAnrPwYntevh1mSEGU0v_LvFGLyPbAzV-Wqf"
+      "https://images.unsplash.com/photo-1505797149-43b0069ec26b?w=600&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?w=600&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1589384267710-7a259678a59a?w=600&auto=format&fit=crop&q=60"
     ],
-    mapUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCAyoXkoaqIaNxEq7v1WGckmFJWc0SA2AyfoKl2MXc1_iSuh8IPgW3ObCa7cmWXfXCJeFmNg1qMp00L5ZFlGECYPcuJTB9MwabgnU0zBDZAFtDqei-uFuMFPrpXtcGIoJLjjj87tF_kUbANgBcu49v7t9pJy0xCIl0VVBZsVYZx-scxKSJ49vIrf9MDEeqpuyqbr2rnuHzP8L4BmQ_cD_rGHUb1bT44VLtP9Y2nKkGrBy9cv1qGam0RABO6MwNKCiByIzrepY4TO7IX",
+    mapUrl: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&auto=format&fit=crop&q=60",
     seller: {
       id: "alex_r",
       name: "Alex R.",
       rating: 4.9,
       reviewsCount: 124,
       isVerified: true,
-      avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aYw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60",
       responseTime: "Typically responds in 10 mins"
     }
   },
@@ -307,7 +307,7 @@ export const initialProducts = [
       rating: 4.9,
       reviewsCount: 124,
       isVerified: true,
-      avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aYw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60",
       responseTime: "Typically responds in 10 mins"
     }
   },
@@ -492,7 +492,7 @@ export const initialProducts = [
       rating: 4.9,
       reviewsCount: 124,
       isVerified: true,
-      avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aYw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60",
       responseTime: "Typically responds in 10 mins"
     }
   },
@@ -529,7 +529,7 @@ export const initialProducts = [
       rating: 4.9,
       reviewsCount: 124,
       isVerified: true,
-      avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aYw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60",
       responseTime: "Typically responds in 10 mins"
     }
   },
@@ -751,7 +751,7 @@ export const initialProducts = [
       rating: 4.9,
       reviewsCount: 124,
       isVerified: true,
-      avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aYw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60",
       responseTime: "Typically responds in 10 mins"
     }
   },
@@ -788,7 +788,7 @@ export const initialProducts = [
       rating: 4.9,
       reviewsCount: 124,
       isVerified: true,
-      avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aYw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60",
       responseTime: "Typically responds in 10 mins"
     }
   },
@@ -995,7 +995,7 @@ export const initialProducts = [
     zipCode: "10001",
     timeListed: "Listed just now",
     views: 0,
-    images: ["https://images.unsplash.com/photo-1616628238628-8f5f7c2b8e1a?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1588449668338-d151688c3a83?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "sarah_m", name: "Sarah M.", rating: 4.8, reviewsCount: 42, isVerified: false, avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 1 hour"}
   },
@@ -1017,7 +1017,7 @@ export const initialProducts = [
     zipCode: "11211",
     timeListed: "Listed 30 mins ago",
     views: 12,
-    images: ["https://images.unsplash.com/photo-1542291026-7ec3e70f4c46?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "dan_k", name: "Daniel K.", rating: 5.0, reviewsCount: 15, isVerified: true, avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 5 mins"}
   },
@@ -1039,9 +1039,9 @@ export const initialProducts = [
     zipCode: "10003",
     timeListed: "Listed 1 hour ago",
     views: 8,
-    images: ["https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
-    seller: {id: "alex_r", name: "Alex R.", rating: 4.9, reviewsCount: 124, isVerified: true, avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aWw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY", responseTime: "Typically responds in 10 mins"}
+    seller: {id: "alex_r", name: "Alex R.", rating: 4.9, reviewsCount: 124, isVerified: true, avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 10 mins"}
   },
   {
     id: "28",
@@ -1061,7 +1061,7 @@ export const initialProducts = [
     zipCode: "11201",
     timeListed: "Listed 2 hours ago",
     views: 5,
-    images: ["https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1628157582853-a796fa650a6a?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "chris_p", name: "Chris P.", rating: 4.6, reviewsCount: 78, isVerified: false, avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 4 hours"}
   },
@@ -1083,9 +1083,9 @@ export const initialProducts = [
     zipCode: "11101",
     timeListed: "Listed 3 hours ago",
     views: 7,
-    images: ["https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
-    seller: {id: "alex_r", name: "Alex R.", rating: 4.9, reviewsCount: 124, isVerified: true, avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aWw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY", responseTime: "Typically responds in 10 mins"}
+    seller: {id: "alex_r", name: "Alex R.", rating: 4.9, reviewsCount: 124, isVerified: true, avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 10 mins"}
   },
   {
     id: "30",
@@ -1105,7 +1105,7 @@ export const initialProducts = [
     zipCode: "11215",
     timeListed: "Listed 45 mins ago",
     views: 9,
-    images: ["https://images.unsplash.com/photo-1601253743065-6d2a3a3f0b5c?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "sarah_m", name: "Sarah M.", rating: 4.8, reviewsCount: 42, isVerified: false, avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 1 hour"}
   },
@@ -1127,7 +1127,7 @@ export const initialProducts = [
     zipCode: "11101",
     timeListed: "Listed 1 hour ago",
     views: 3,
-    images: ["https://images.unsplash.com/photo-1582719478252-33c2ac8e3b57?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1578643463396-0997cb5328c1?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "dan_k", name: "Daniel K.", rating: 5.0, reviewsCount: 15, isVerified: true, avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 5 mins"}
   },
@@ -1149,9 +1149,9 @@ export const initialProducts = [
     zipCode: "10012",
     timeListed: "Listed 2 hours ago",
     views: 6,
-    images: ["https://images.unsplash.com/photo-1519183071298-a2962d90aeb7?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
-    seller: {id: "alex_r", name: "Alex R.", rating: 4.9, reviewsCount: 124, isVerified: true, avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aWw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY", responseTime: "Typically responds in 10 mins"}
+    seller: {id: "alex_r", name: "Alex R.", rating: 4.9, reviewsCount: 124, isVerified: true, avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 10 mins"}
   },
   {
     id: "33",
@@ -1171,7 +1171,7 @@ export const initialProducts = [
     zipCode: "11205",
     timeListed: "Listed 3 hours ago",
     views: 4,
-    images: ["https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1550985616-10810253b84d?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "chris_p", name: "Chris P.", rating: 4.6, reviewsCount: 78, isVerified: false, avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 4 hours"}
   },
@@ -1193,7 +1193,7 @@ export const initialProducts = [
     zipCode: "10003",
     timeListed: "Listed 4 hours ago",
     views: 10,
-    images: ["https://images.unsplash.com/photo-1517048678734-2b5c1b4bd2c3?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1612287230202-1bf1d85d1bdf?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "sarah_m", name: "Sarah M.", rating: 4.8, reviewsCount: 42, isVerified: false, avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 1 hour"}
   },
@@ -1215,7 +1215,7 @@ export const initialProducts = [
     zipCode: "11201",
     timeListed: "Listed just now",
     views: 0,
-    images: ["https://images.unsplash.com/photo-1580951693785-58c8f5c5d6b5?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "dan_k", name: "Daniel K.", rating: 5.0, reviewsCount: 15, isVerified: true, avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 5 mins"}
   },
@@ -1237,9 +1237,9 @@ export const initialProducts = [
     zipCode: "10012",
     timeListed: "Listed 2 hours ago",
     views: 5,
-    images: ["https://images.unsplash.com/photo-1515442261605-6e90a3fdafc5?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
-    seller: {id: "alex_r", name: "Alex R.", rating: 4.9, reviewsCount: 124, isVerified: true, avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aWw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY", responseTime: "Typically responds in 10 mins"}
+    seller: {id: "alex_r", name: "Alex R.", rating: 4.9, reviewsCount: 124, isVerified: true, avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 10 mins"}
   },
   {
     id: "37",
@@ -1259,7 +1259,7 @@ export const initialProducts = [
     zipCode: "11209",
     timeListed: "Listed just now",
     views: 0,
-    images: ["https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "sarah_m", name: "Sarah M.", rating: 4.8, reviewsCount: 42, isVerified: false, avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 1 hour"}
   },
@@ -1303,9 +1303,9 @@ export const initialProducts = [
     zipCode: "11354",
     timeListed: "Listed 1 hour ago",
     views: 4,
-    images: ["https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
-    seller: {id: "alex_r", name: "Alex R.", rating: 4.9, reviewsCount: 124, isVerified: true, avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aWw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY", responseTime: "Typically responds in 10 mins"}
+    seller: {id: "alex_r", name: "Alex R.", rating: 4.9, reviewsCount: 124, isVerified: true, avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 10 mins"}
   },
   {
     id: "40",
@@ -1325,7 +1325,7 @@ export const initialProducts = [
     zipCode: "10024",
     timeListed: "Listed 2 hours ago",
     views: 3,
-    images: ["https://images.unsplash.com/photo-1517495306987-0d9e8e0e6f9e?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1544923246-77307dd654cb?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "sarah_m", name: "Sarah M.", rating: 4.8, reviewsCount: 42, isVerified: false, avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 1 hour"}
   },
@@ -1347,7 +1347,7 @@ export const initialProducts = [
     zipCode: "11215",
     timeListed: "Listed 30 mins ago",
     views: 1,
-    images: ["https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "dan_k", name: "Daniel K.", rating: 5.0, reviewsCount: 15, isVerified: true, avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 5 mins"}
   },
@@ -1369,9 +1369,9 @@ export const initialProducts = [
     zipCode: "10003",
     timeListed: "Listed just now",
     views: 0,
-    images: ["https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
-    seller: {id: "alex_r", name: "Alex R.", rating: 4.9, reviewsCount: 124, isVerified: true, avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aWw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY", responseTime: "Typically responds in 10 mins"}
+    seller: {id: "alex_r", name: "Alex R.", rating: 4.9, reviewsCount: 124, isVerified: true, avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 10 mins"}
   },
   {
     id: "43",
@@ -1391,7 +1391,7 @@ export const initialProducts = [
     zipCode: "11201",
     timeListed: "Listed 2 hours ago",
     views: 6,
-    images: ["https://images.unsplash.com/photo-1519682336525-1cfa03b3f6dc?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "sarah_m", name: "Sarah M.", rating: 4.8, reviewsCount: 42, isVerified: false, avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 1 hour"}
   },
@@ -1413,7 +1413,7 @@ export const initialProducts = [
     zipCode: "07030",
     timeListed: "Listed 3 hours ago",
     views: 4,
-    images: ["https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&auto=format&fit=crop&q=60"],
+    images: ["https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&auto=format&fit=crop&q=60"],
     mapUrl: "",
     seller: {id: "dan_k", name: "Daniel K.", rating: 5.0, reviewsCount: 15, isVerified: true, avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=60", responseTime: "Typically responds in 5 mins"}
   }
@@ -1450,7 +1450,7 @@ export const initialChats = [
   {
     sellerId: "alex_r",
     sellerName: "Alex R.",
-    sellerAvatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7QJ-xlfBvElGtQT_YS1yHMC99nrdFCiAD24EcYr4YFfoADHaL9BE2r_anpQTDcIdkdP5ugHKult290Qk946MiK_HEbUx4n088lr_n4SCiga_ZK_kItGmamegQPp9XO04QuV76DlRb73vc-DGH7nGlP09zYquy2rcSLrspU99lQWZCgt2O54jLYqi3gw3Gzv0cSb4VWFEfSvSej7n6qJvhy30sKjDHr5dAp0qlDYqz-aYw-apuxUIO6y1TIms7u4saDiLTFbK-f3qY",
+    sellerAvatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60",
     productTitle: "Premium Ergonomic Office Chair",
     productId: "1",
     messages: [

@@ -28,11 +28,11 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-gradient-to-r from-[#0052ff] to-[#003dbb] text-white font-body-md text-body-md sticky top-0 left-0 w-full z-50 flex flex-col items-center px-lg py-sm shadow-[0_10px_20px_-5px_rgba(28,30,33,0.12)]">
-      <div className="w-full flex items-center justify-between px-lg">
+    <header className="bg-gradient-to-r from-[#0052ff] to-[#003dbb] text-white font-body-md text-body-md sticky top-0 left-0 w-full z-50 flex flex-col items-center px-sm md:px-lg py-sm shadow-[0_10px_20px_-5px_rgba(28,30,33,0.12)]">
+      <div className="w-full flex items-center justify-between px-0 md:px-lg">
         {/* Brand Logo */}
         <div className="flex items-center gap-md">
-          <Link to="/" className="font-headline-md text-headline-md font-bold text-white hover:opacity-90 active:scale-95 transition-all">
+          <Link to="/" className="font-headline-md text-[18px] sm:text-headline-md font-bold text-white hover:opacity-90 active:scale-95 transition-all">
             OmniMarket
           </Link>
         </div>
@@ -63,7 +63,7 @@ export default function Navbar() {
         </form>
 
         {/* Desktop Navigation / Actions */}
-        <div className="flex items-center gap-sm">
+        <div className="flex items-center gap-xs sm:gap-sm">
           {/* Categories Dropdown */}
           <div className="relative hidden md:block">
             <button
@@ -183,6 +183,16 @@ export default function Navbar() {
                 <button
                   onClick={() => {
                     setDropdownOpen(false);
+                    navigate('/sell');
+                  }}
+                  className="md:hidden px-md py-sm hover:bg-surface-container-low text-left text-body-md text-[14px] flex items-center gap-sm cursor-pointer border-none bg-transparent w-full text-primary font-semibold"
+                >
+                  <span className="material-symbols-outlined text-[18px]">storefront</span>
+                  Sell an Item
+                </button>
+                <button
+                  onClick={() => {
+                    setDropdownOpen(false);
                     navigate('/profile/edit');
                   }}
                   className="px-md py-sm hover:bg-surface-container-low text-left text-body-md text-[14px] flex items-center gap-sm cursor-pointer border-none bg-transparent w-full text-on-surface"
@@ -236,7 +246,7 @@ export default function Navbar() {
 
           <Link
             to="/sell"
-            className="bg-secondary-fixed text-on-secondary-fixed px-md py-xs rounded-xl font-bold hover:shadow-level-2 transition-all ml-xs cursor-pointer active:scale-95 transition-transform text-body-md flex items-center justify-center"
+            className="hidden md:flex bg-secondary-fixed text-on-secondary-fixed px-sm py-xs sm:px-md rounded-xl font-bold hover:shadow-level-2 transition-all ml-xs cursor-pointer active:scale-95 transition-transform text-xs sm:text-body-md items-center justify-center"
           >
             Sell
           </Link>

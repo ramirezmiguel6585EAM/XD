@@ -6,7 +6,60 @@ export const AppContext = createContext();
 export const AppProvider = ({ children }) => {
   const [products, setProducts] = useState(() => {
     const saved = localStorage.getItem('omnimarket_products');
-    return saved ? JSON.parse(saved) : initialProducts;
+    let loadedProducts = initialProducts;
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) {
+          if (parsed.length >= 25) {
+            loadedProducts = parsed;
+          } else {
+            const merged = [...parsed];
+            initialProducts.forEach(initP => {
+              if (!merged.some(p => p.id === initP.id)) {
+                merged.push(initP);
+              }
+            });
+            loadedProducts = merged;
+          }
+        }
+      } catch (e) {
+        console.error("Error parsing products", e);
+      }
+    }
+
+    // Clean expired googleusercontent URLs from loaded data
+    return loadedProducts.map(p => {
+      const updatedImages = Array.isArray(p.images)
+        ? p.images.map((img, idx) => {
+            if (typeof img === 'string' && img.includes('lh3.googleusercontent.com')) {
+              const chairImages = [
+                "https://images.unsplash.com/photo-1505797149-43b0069ec26b?w=600&auto=format&fit=crop&q=60",
+                "https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?w=600&auto=format&fit=crop&q=60",
+                "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&auto=format&fit=crop&q=60",
+                "https://images.unsplash.com/photo-1589384267710-7a259678a59a?w=600&auto=format&fit=crop&q=60"
+              ];
+              return chairImages[idx % chairImages.length];
+            }
+            return img;
+          })
+        : p.images;
+
+      const updatedSellerAvatar = p.seller && typeof p.seller.avatar === 'string' && p.seller.avatar.includes('lh3.googleusercontent.com')
+        ? "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60"
+        : (p.seller ? p.seller.avatar : "");
+
+      const updatedMapUrl = typeof p.mapUrl === 'string' && p.mapUrl.includes('lh3.googleusercontent.com')
+        ? "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&auto=format&fit=crop&q=60"
+        : p.mapUrl;
+
+      return {
+        ...p,
+        images: updatedImages,
+        mapUrl: updatedMapUrl,
+        seller: p.seller ? { ...p.seller, avatar: updatedSellerAvatar } : p.seller
+      };
+    });
   });
 
   const [purchases, setPurchases] = useState(() => {

@@ -68,6 +68,18 @@ export default function Home() {
               </button>
             </div>
           </form>
+
+          {/* Sell CTA button */}
+          <div className="mt-md flex flex-col items-center gap-xs">
+            <span className="text-white/80 text-[14px] font-semibold">Have something to sell?</span>
+            <button
+              onClick={() => navigate('/sell')}
+              className="bg-secondary-fixed text-on-secondary-fixed px-xl py-sm rounded-xl font-bold hover:bg-secondary-container hover:shadow-level-2 transition-all cursor-pointer active:scale-95 flex items-center gap-xs text-[15px]"
+            >
+              <span className="material-symbols-outlined text-[20px]">storefront</span>
+              Start Selling
+            </button>
+          </div>
         </div>
       </section>
 
@@ -93,6 +105,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+
 
       {/* Main Listings Grid */}
       <section className="w-full max-w-container-max px-md md:px-lg pb-[64px]">
