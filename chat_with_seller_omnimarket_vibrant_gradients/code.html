@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OmniMarket - Messages</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#e2e2e6",
+                      "surface-container-highest": "#e2e2e6",
+                      "inverse-surface": "#2f3034",
+                      "surface": "#f9f9fd",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-fixed-dim": "#5adf81",
+                      "tertiary-fixed": "#78fc9b",
+                      "primary-container": "#0866ff",
+                      "on-error-container": "#93000a",
+                      "outline": "#727687",
+                      "on-primary-container": "#f9f7ff",
+                      "on-background": "#1a1c1f",
+                      "on-primary": "#ffffff",
+                      "primary-fixed-dim": "#b3c5ff",
+                      "on-tertiary-fixed-variant": "#005224",
+                      "secondary-fixed-dim": "#dec800",
+                      "on-tertiary-container": "#e7ffe6",
+                      "primary-fixed": "#dbe1ff",
+                      "on-error": "#ffffff",
+                      "tertiary": "#006830",
+                      "surface-bright": "#f9f9fd",
+                      "secondary": "#6a5f00",
+                      "outline-variant": "#c2c6d8",
+                      "on-surface-variant": "#424656",
+                      "secondary-fixed": "#fde400",
+                      "secondary-container": "#fae100",
+                      "background": "#f9f9fd",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed": "#00184a",
+                      "inverse-primary": "#b3c5ff",
+                      "surface-container": "#ededf1",
+                      "error": "#ba1a1a",
+                      "on-surface": "#1a1c1f",
+                      "surface-container-low": "#f3f3f7",
+                      "on-secondary-container": "#6f6300",
+                      "on-secondary-fixed-variant": "#504700",
+                      "surface-tint": "#0054d7",
+                      "on-primary-fixed-variant": "#003fa5",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-dim": "#d9dade",
+                      "on-secondary-fixed": "#201c00",
+                      "surface-container-high": "#e8e8ec",
+                      "primary": "#0050cd",
+                      "on-tertiary-fixed": "#00210b",
+                      "tertiary-container": "#00843e",
+                      "inverse-on-surface": "#f0f0f4"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "base": "4px",
+                      "lg": "24px",
+                      "xs": "8px",
+                      "md": "16px",
+                      "xl": "32px",
+                      "sm": "12px",
+                      "gutter": "16px"
+              },
+              "fontFamily": {
+                      "price-display": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "price-display": [
+                              "20px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "0em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-sans">
+<!-- TopNavBar -->
+<nav class="bg-gradient-to-r from-[#0052ff] to-[#003dbb] text-white shadow-md docked full-width top-0 z-50">
+<div class="flex justify-between items-center w-full px-lg py-md max-w-container-max mx-auto">
+<div class="flex items-center gap-md">
+<a class="font-headline-md text-headline-md font-bold text-white" href="#">OmniMarket</a>
+<div class="hidden md:flex gap-sm">
+<a class="text-white/80 hover:text-white hover:bg-white/10 transition-colors duration-200 px-sm py-base rounded-lg active:scale-95 transition-transform duration-150 font-body-md text-body-md" href="#">Electronics</a>
+<a class="text-white/80 hover:text-white hover:bg-white/10 transition-colors duration-200 px-sm py-base rounded-lg active:scale-95 transition-transform duration-150 font-body-md text-body-md" href="#">Home &amp; Garden</a>
+<a class="text-white/80 hover:text-white hover:bg-white/10 transition-colors duration-200 px-sm py-base rounded-lg active:scale-95 transition-transform duration-150 font-body-md text-body-md" href="#">Fashion</a>
+<a class="text-white/80 hover:text-white hover:bg-white/10 transition-colors duration-200 px-sm py-base rounded-lg active:scale-95 transition-transform duration-150 font-body-md text-body-md" href="#">Motors</a>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button class="bg-white/10 text-white border border-white/20 px-md py-xs rounded-lg font-body-md text-body-md hover:bg-white/20 transition-colors">Sell</button>
+<a class="text-white font-bold border-b-2 border-white pb-1 font-body-md text-body-md active:scale-95 transition-transform duration-150 hover:bg-white/10 transition-colors duration-200 px-sm" href="#">Messages</a>
+<button class="text-white/80 hover:text-white transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-white/80 hover:text-white transition-colors">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-grow flex w-full max-w-container-max mx-auto overflow-hidden h-[calc(100vh-80px)]">
+<!-- Sidebar - Conversations -->
+<aside class="w-full md:w-80 lg:w-96 bg-[#f4f7ff] border-r border-primary-fixed flex flex-col h-full flex-shrink-0 md:flex">
+<div class="p-md border-b border-primary-fixed">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-sm top-1/2 transform -translate-y-1/2 text-primary">magnify_docked</span>
+<input class="w-full pl-xl pr-md py-xs bg-white border border-outline-variant rounded-lg focus:outline-none focus:border-[#0052ff] focus:ring-1 focus:ring-[#0052ff] font-body-md text-body-md" placeholder="Search messages..." type="text"/>
+</div>
+</div>
+<div class="overflow-y-auto flex-grow">
+<!-- Active Conversation -->
+<a class="flex items-center gap-sm p-md bg-[#e0e7ff] border-l-4 border-[#0052ff] hover:bg-[#d1dbfe] transition-colors cursor-pointer" href="#">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="A close-up portrait of a professional individual with a friendly expression. The lighting is soft and natural, emphasizing approachability. The background is slightly blurred to keep focus on the subject. High quality, crisp details, corporate modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiI8ZUGEaUmF8B7WhV-qdZea1rUg7IOofAbk5qkxen1AgVa175VJ8c09tlI3BXAvdlVzxboSudRANaubN_fmu68VcAA9BejwyqVMW1o7BU2HVIFM0CO1QcnFbkEExKiGNGJsvJ1nvT6q-p9-t3sE24beDGkguCzTes1G6KXM41zop98BiTX46BcTcw2v70INCOb6ZmTZDBop8EzWHvreE50loRSskSsQNGzBWV91lvmcBAXUPTpg-lEjIZAGM0Dgg1jTGFAw2AsvSL"/>
+<div class="flex-grow overflow-hidden">
+<div class="flex justify-between items-center mb-base">
+<span class="font-headline-md text-body-md text-on-surface truncate">Alex J.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Just now</span>
+</div>
+<p class="font-body-md text-body-md text-[#0052ff] truncate">Are you still interested in the...</p>
+</div>
+</a>
+<!-- Inactive Conversation 1 -->
+<a class="flex items-center gap-sm p-md border-l-4 border-transparent hover:bg-[#e0e7ff]/50 transition-colors cursor-pointer" href="#">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="A portrait of a young woman in a well-lit cafe setting, smiling subtly. The atmosphere is casual yet professional. High resolution, bright lighting, clear focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk2Lf6ATZaV0JIYQb_b8L-Xooy4fWw4HC45R5l1CO-uGs5BCj9ahEIhdX4X83gMZqcVKifylRZ4plx019uiWPSe2LUNuAih83gtFQWHTtwDqIyn3Y_abjOnh-a60uI8mfyxtq7-BoXlG2DeiVdxIxJ1z9gLoO6SDrhJzm9NAwvv2dHesyUtUFoH6lowsV8P_UItGfwk5isATdgoOX1VQjOhaZF4U9r77tAhb7X-XdW08mVp41Mztx3PIpIdL_3VGnVjQIjf322CXK0"/>
+<div class="flex-grow overflow-hidden">
+<div class="flex justify-between items-center mb-base">
+<span class="font-headline-md text-body-md text-on-surface truncate">Sarah M.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 hours ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">Thanks! I'll pick it up tomorrow.</p>
+</div>
+</a>
+<!-- Inactive Conversation 2 -->
+<a class="flex items-center gap-sm p-md border-l-4 border-transparent hover:bg-[#e0e7ff]/50 transition-colors cursor-pointer" href="#">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="A headshot of a man outdoors with a subtle urban background. Natural daylight casting soft shadows on his face. He looks reliable and professional. High-end photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv1yOn0XutFn_3zGuENsHyZIfDKIsmwx5LYRPU_rKi2dBYZRrWYf-K3h9vBjNsAOB4hpMbu258LxXD-BQ5fW0pbFlXJaBJin2-7_FaDzeHXrcmeiapRQDAnIPWgdn7aWRpW9rV3x5Cq9vqBDEVll4R1WKoaIjZ6rvf9j1K6mE_rdRkI_mnSjfDfFmT1JV8pvp5RzkRYHZw3PHxsuR_BiykONiwVGTiCMPzA1vnB9EGPvyUry9MawkGFuVxXwxMpG96CuwIdQFQjVqq"/>
+<div class="flex-grow overflow-hidden">
+<div class="flex justify-between items-center mb-base">
+<span class="font-headline-md text-body-md text-on-surface truncate">David K.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yesterday</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">Is the price negotiable?</p>
+</div>
+</a>
+</div>
+</aside>
+<!-- Main Chat Area -->
+<section class="flex-grow bg-white flex flex-col h-full hidden md:flex">
+<!-- Chat Header -->
+<div class="h-20 bg-white border-b border-primary-fixed px-lg flex items-center justify-between shadow-[0_10px_20px_-5px_rgba(28,30,33,0.05)] z-10 flex-shrink-0">
+<div class="flex items-center gap-md">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="A close-up portrait of a professional individual with a friendly expression. The lighting is soft and natural, emphasizing approachability. The background is slightly blurred to keep focus on the subject. High quality, crisp details, corporate modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIsxUm1hGEgmT0nRul5x786KVn2wLeLZV5luRoIGjTRygf7tNo8IygWU9WJJ0VnRvwD_CxPSt0wUiTEIOI7TXOJkso1yaDMilBk7Ivc51f96km0gmE29zMr4neMHmYoRMMcRU66mZbd3hHl9bU6F6wylyeO-0rSvR-1yg1fRsxdKhnkbT0hi1AdBkt1oeLhSMpwnntYJChLkms74K8tcbPvVP94VAbzQiVpWKdX4M6-2NvjSJckdCZyOGhN9LWbnkZTh69BDO51TMs"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-tertiary-fixed border-2 border-surface rounded-full"></span>
+</div>
+<div>
+<h2 class="font-headline-md text-body-lg text-on-surface">Alex J.</h2>
+<span class="font-label-sm text-label-sm text-tertiary">Online</span>
+</div>
+</div>
+<!-- Product Snippet -->
+<div class="hidden lg:flex items-center gap-sm p-sm bg-[#f4f7ff] rounded-lg border border-primary-fixed">
+<img class="w-12 h-12 rounded object-cover" data-alt="A sleek, modern wireless headphone resting on a minimalist white surface. Clean studio lighting, high contrast, casting a soft shadow to create depth. Corporate modern e-commerce product shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWg2uvIrc7eEwjauMqr_NC4AefFtuKbRcmRqEeBN_en_MZmvAxzLF8mBG533BC4NGZkynA4XAP3ERjtH6m-Ki7UTGK6eBySzHBMqTx0lkPPcnpc2ZK2Di_eNDeYEP7-q-f6ghejrolmYGNmvdspFwxfvdkjieo7ATQCfLqr7wz9bpEFUeyTgGRv1hpn0RQoUHxvIl-XpyRn77ACouqyl4OFq9wZm-AcWCUp_3npYL1fuLEYed6_e0-9K2hYOp0TNwQsRPIToCRxeve"/>
+<div>
+<p class="font-body-md text-body-md text-on-surface font-semibold">Sony WH-1000XM4</p>
+<p class="font-price-display text-body-md text-on-surface-variant">$250</p>
+</div>
+</div>
+</div>
+<!-- Chat History -->
+<div class="flex-grow overflow-y-auto p-lg flex flex-col gap-md bg-[#eef2ff]">
+<!-- Time Divider -->
+<div class="flex justify-center my-sm">
+<span class="bg-[#dbe1ff] text-[#00184a] px-sm py-base rounded-full font-label-sm text-label-sm">Today</span>
+</div>
+<!-- Seller Message -->
+<div class="flex items-start gap-sm max-w-[80%]">
+<img class="w-8 h-8 rounded-full object-cover mt-1" data-alt="A close-up portrait of a professional individual with a friendly expression. The lighting is soft and natural, emphasizing approachability. The background is slightly blurred to keep focus on the subject. High quality, crisp details, corporate modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADvBx8EdcwvPW6nzb8g6ODlvBGrRf0okND0-5Rpl-c1NOl_b98Gmidu3L3UEeennTULynNOhTY6y67jBrji2DnuancSU2W8IWS2sP6tT7Ra8LNPrqxM3q6PRxtIUcKqNKfAkQhsYHYZRD1S_ByG6i3DUk13gVC6If-xHVKQ5idl-Fk2Ew837CyzNApIfJjl8Wg0M7epaI6g0opmKMzvZ6hW3OQUTwlBqArWv0NGQyh5ImCE5KG14-_ZTtR88N7TzElgma-I95dbflL"/>
+<div class="bg-[#dbe1ff] text-[#00184a] p-md rounded-xl rounded-tl-sm shadow-[0_10px_20px_-5px_rgba(28,30,33,0.05)]">
+<p class="font-body-md text-body-md">Hi there! Thanks for your interest in the headphones. They are still in perfect condition, barely used.</p>
+<span class="font-label-sm text-label-sm text-[#00184a]/70 mt-xs block text-right">10:42 AM</span>
+</div>
+</div>
+<!-- User Message -->
+<div class="flex items-start gap-sm max-w-[80%] self-end flex-row-reverse">
+<div class="bg-[#0052ff] text-white p-md rounded-xl rounded-tr-sm shadow-[0_10px_20px_-5px_rgba(28,30,33,0.12)]">
+<p class="font-body-md text-body-md">Great! Do you have the original box and accessories?</p>
+<span class="font-label-sm text-label-sm text-white/80 mt-xs block text-left">10:45 AM</span>
+</div>
+</div>
+<!-- Seller Message -->
+<div class="flex items-start gap-sm max-w-[80%]">
+<img class="w-8 h-8 rounded-full object-cover mt-1" data-alt="A close-up portrait of a professional individual with a friendly expression. The lighting is soft and natural, emphasizing approachability. The background is slightly blurred to keep focus on the subject. High quality, crisp details, corporate modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrpVEbwzyCSzuggdZzWhXyAP0b5_W_jOaEXNmEpobmkwe_5diLA3C91G_1HTSK0yUzbSIzePsEywP7h0JoNdsjp2lZU8hP9XUgDc0myAgoYs6rkauIRJB2SlCfp5i7MO5KHKCh5M3DplGu02sHiUQitc-pvjRuycdVc1UEcPrdeJUHN071wkTMmJZTNWiwg-A8-5XMkDhl3dkuDiR2DJMJ-o1AlnzUhOh3a-hfEsUBbPA1GVJmuCP1ljMg_7PQlda2405To_J0mb2U"/>
+<div class="bg-[#dbe1ff] text-[#00184a] p-md rounded-xl rounded-tl-sm shadow-[0_10px_20px_-5px_rgba(28,30,33,0.05)]">
+<p class="font-body-md text-body-md">Yes, everything is included. Box, carrying case, cables, and airplane adapter.</p>
+<span class="font-label-sm text-label-sm text-[#00184a]/70 mt-xs block text-right">10:48 AM</span>
+</div>
+</div>
+<!-- User Message -->
+<div class="flex items-start gap-sm max-w-[80%] self-end flex-row-reverse">
+<div class="bg-[#0052ff] text-white p-md rounded-xl rounded-tr-sm shadow-[0_10px_20px_-5px_rgba(28,30,33,0.12)]">
+<p class="font-body-md text-body-md">Awesome. Are you flexible on the price at all? Would you consider $230?</p>
+<span class="font-label-sm text-label-sm text-white/80 mt-xs block text-left">10:55 AM</span>
+</div>
+</div>
+<!-- Seller Message (Just Now) -->
+<div class="flex items-start gap-sm max-w-[80%]">
+<img class="w-8 h-8 rounded-full object-cover mt-1" data-alt="A close-up portrait of a professional individual with a friendly expression. The lighting is soft and natural, emphasizing approachability. The background is slightly blurred to keep focus on the subject. High quality, crisp details, corporate modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRLc0r7RwwDo34zP_WUbVzzTcHh9x3hrPeAjW_6_4jkSIRjvRhOgzy1fDCtFsBSnjI2WZogBH9kWy-Wp6Nz8w2Qjt8JQUAzk7E5dn9oT0PoBBp1sVoZBY-g6vmz4gqhOPeeI4KER9na4qGfq8k0BmdmRhLY2QtIB9ZOPAAmnTgUJkx5ZOprH2VF4QTNTyYQlRy6tBtJmF_ujoeGRqMgnFu4R7qT0vaKEJeesQFsq0dn0Pc5ljtfyTvVBDZ5dernUvxcf58m3C_wrkd"/>
+<div class="bg-[#dbe1ff] text-[#00184a] p-md rounded-xl rounded-tl-sm shadow-[0_10px_20px_-5px_rgba(28,30,33,0.05)]">
+<p class="font-body-md text-body-md">Are you still interested in the $230 offer? I can do that if you pick them up today.</p>
+<span class="font-label-sm text-label-sm text-[#00184a]/70 mt-xs block text-right">Just now</span>
+</div>
+</div>
+</div>
+<!-- Input Area -->
+<div class="bg-white p-md border-t border-primary-fixed flex-shrink-0">
+<div class="flex items-center gap-sm bg-[#f4f7ff] border border-primary-fixed rounded-lg p-sm focus-within:border-[#0052ff] focus-within:ring-1 focus-within:ring-[#0052ff] transition-all">
+<button class="text-outline hover:text-[#0052ff] transition-colors p-sm">
+<span class="material-symbols-outlined">attach_file</span>
+</button>
+<input class="flex-grow bg-transparent border-none focus:outline-none focus:ring-0 font-body-md text-body-md text-on-surface px-sm" placeholder="Type a message..." type="text"/>
+<button class="bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container px-lg py-sm rounded-lg font-label-sm text-label-sm uppercase tracking-wide font-bold transition-colors shadow-sm">
+                        Send
+                    </button>
+</div>
+</div>
+</section>
+</main>
+</body></html>

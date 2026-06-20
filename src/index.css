@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-background: #1a1c1f;
+  --color-on-surface-variant: #424656;
+  --color-surface-bright: #f9f9fd;
+  --color-secondary-fixed: #fde400;
+  --color-on-secondary-fixed-variant: #504700;
+  --color-surface-container-highest: #e2e2e6;
+  --color-on-error-container: #93000a;
+  --color-inverse-on-surface: #f0f0f4;
+  --color-tertiary-fixed-dim: #5adf81;
+  --color-on-tertiary-fixed-variant: #005224;
+  --color-on-secondary-container: #6f6300;
+  --color-inverse-surface: #2f3034;
+  --color-primary-fixed-dim: #b3c5ff;
+  --color-secondary-fixed-dim: #dec800;
+  --color-error-container: #ffdad6;
+  --color-outline-variant: #c2c6d8;
+  --color-surface-container-low: #f3f3f7;
+  --color-tertiary: #006830;
+  --color-on-tertiary-container: #e7ffe6;
+  --color-tertiary-container: #00843e;
+  --color-surface-container-high: #e8e8ec;
+  --color-primary-fixed: #dbe1ff;
+  --color-on-surface: #1a1c1f;
+  --color-inverse-primary: #b3c5ff;
+  --color-on-tertiary-fixed: #00210b;
+  --color-error: #ba1a1a;
+  --color-background: #f9f9fd;
+  --color-surface-tint: #0054d7;
+  --color-on-secondary-fixed: #201c00;
+  --color-surface-container: #ededf1;
+  --color-secondary-container: #fae100;
+  --color-primary: #0050cd;
+  --color-on-primary: #ffffff;
+  --color-surface-dim: #d9dade;
+  --color-outline: #727687;
+  --color-secondary: #6a5f00;
+  --color-surface-variant: #e2e2e6;
+  --color-primary-container: #0866ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-secondary: #ffffff;
+  --color-on-primary-fixed: #00184a;
+  --color-tertiary-fixed: #78fc9b;
+  --color-surface: #f9f9fd;
+  --color-on-tertiary: #ffffff;
+  --color-on-primary-container: #f9f7ff;
+  --color-on-primary-fixed-variant: #003fa5;
+  --color-on-error: #ffffff;
+
+  --radius-DEFAULT: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-container-max: 1280px;
+  --spacing-xs: 8px;
+  --spacing-gutter: 16px;
+  --spacing-xl: 32px;
+  --spacing-sm: 12px;
+  --spacing-base: 4px;
+
+  --font-price-display: "Inter", sans-serif;
+  --font-headline-lg-mobile: "Inter", sans-serif;
+  --font-headline-lg: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+  --font-headline-xl: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-headline-md: "Inter", sans-serif;
+}
+
+/* Material Symbols configuration */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.material-symbols-outlined[data-weight="fill"] {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Custom Shadows */
+.shadow-level-1 {
+  box-shadow: 0 4px 10px rgba(28, 30, 33, 0.12);
+}
+.shadow-level-2 {
+  box-shadow: 0 8px 20px rgba(28, 30, 33, 0.16);
+}
+
+/* Scrollbar styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #c2c6d8;
+  border-radius: 20px;
+}
+
+/* Form focus indicator */
+.brand-focus:focus-within {
+  outline: none;
+  border-color: #0050cd;
+  box-shadow: 0 0 0 1px #0050cd;
+}

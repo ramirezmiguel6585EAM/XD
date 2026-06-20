@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Purchases - OmniMarket</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#e2e2e6",
+                      "surface-container-highest": "#e2e2e6",
+                      "inverse-surface": "#2f3034",
+                      "surface": "#f9f9fd",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-fixed-dim": "#5adf81",
+                      "tertiary-fixed": "#78fc9b",
+                      "primary-container": "#0866ff",
+                      "on-error-container": "#93000a",
+                      "outline": "#727687",
+                      "on-primary-container": "#f9f7ff",
+                      "on-background": "#1a1c1f",
+                      "on-primary": "#ffffff",
+                      "primary-fixed-dim": "#b3c5ff",
+                      "on-tertiary-fixed-variant": "#005224",
+                      "secondary-fixed-dim": "#dec800",
+                      "on-tertiary-container": "#e7ffe6",
+                      "primary-fixed": "#dbe1ff",
+                      "on-error": "#ffffff",
+                      "tertiary": "#006830",
+                      "surface-bright": "#f9f9fd",
+                      "secondary": "#6a5f00",
+                      "outline-variant": "#c2c6d8",
+                      "on-surface-variant": "#424656",
+                      "secondary-fixed": "#fde400",
+                      "secondary-container": "#fae100",
+                      "background": "#f9f9fd",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed": "#00184a",
+                      "inverse-primary": "#b3c5ff",
+                      "surface-container": "#ededf1",
+                      "error": "#ba1a1a",
+                      "on-surface": "#1a1c1f",
+                      "surface-container-low": "#f3f3f7",
+                      "on-secondary-container": "#6f6300",
+                      "on-secondary-fixed-variant": "#504700",
+                      "surface-tint": "#0054d7",
+                      "on-primary-fixed-variant": "#003fa5",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-dim": "#d9dade",
+                      "on-secondary-fixed": "#201c00",
+                      "surface-container-high": "#e8e8ec",
+                      "primary": "#0050cd",
+                      "on-tertiary-fixed": "#00210b",
+                      "tertiary-container": "#00843e",
+                      "inverse-on-surface": "#f0f0f4"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "base": "4px",
+                      "lg": "24px",
+                      "xs": "8px",
+                      "md": "16px",
+                      "xl": "32px",
+                      "sm": "12px",
+                      "gutter": "16px"
+              },
+              "fontFamily": {
+                      "price-display": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "price-display": [
+                              "20px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "0em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .level-1-shadow { box-shadow: 0 10px 20px -5px rgba(28,30,33,0.12); }
+        .level-2-shadow { box-shadow: 0 15px 30px -5px rgba(28,30,33,0.18); }
+    </style>
+</head>
+<body class="bg-surface-container-low text-on-background font-body-md text-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-gradient-to-r from-[#0052ff] to-[#003dbb] docked full-width top-0 shadow-md z-50">
+<div class="flex justify-between items-center w-full px-lg py-md max-w-container-max mx-auto">
+<!-- Brand -->
+<div class="flex items-center gap-md">
+<span class="font-headline-md text-headline-md font-bold text-white tracking-tight">OmniMarket</span>
+</div>
+<!-- Navigation Links (Hidden on Mobile) -->
+<nav class="hidden md:flex gap-lg items-center">
+<a class="font-body-md text-body-md text-white/80 hover:text-white hover:bg-white/10 transition-colors duration-200 px-sm py-base rounded-md" href="#">Electronics</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white hover:bg-white/10 transition-colors duration-200 px-sm py-base rounded-md" href="#">Home &amp; Garden</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white hover:bg-white/10 transition-colors duration-200 px-sm py-base rounded-md" href="#">Fashion</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white hover:bg-white/10 transition-colors duration-200 px-sm py-base rounded-md" href="#">Motors</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-md">
+<button class="hidden md:block font-body-md text-body-md font-semibold text-white hover:bg-white/10 transition-colors duration-200 px-md py-sm rounded-lg">Sell</button>
+<button class="hidden md:block font-body-md text-body-md font-semibold text-white/90 hover:bg-white/10 transition-colors duration-200 px-md py-sm rounded-lg">Messages</button>
+<div class="flex gap-xs">
+<button class="p-sm rounded-full hover:bg-white/10 transition-colors duration-200 text-white flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'wght' 300;">notifications</span>
+</button>
+<!-- Active State indicated contextually since user is in Settings/Dashboard -->
+<button class="p-sm rounded-full bg-white/20 transition-colors duration-200 text-white flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'wght' 300, 'FILL' 1;">account_circle</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 w-full max-w-container-max mx-auto px-md md:px-lg py-xl flex flex-col lg:flex-row gap-xl">
+<!-- Sidebar Navigation -->
+<aside class="w-full lg:w-64 shrink-0">
+<div class="bg-primary/5 rounded-xl level-1-shadow p-sm sticky top-[100px]">
+<nav class="flex flex-col gap-base">
+<a class="flex items-center gap-sm px-md py-sm rounded-lg bg-surface-container-low text-primary font-label-sm text-label-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+                        All Orders
+                    </a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface font-label-sm text-label-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+                        In Transit
+                    </a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface font-label-sm text-label-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">cancel</span>
+                        Cancelled
+                    </a>
+<hr class="border-outline-variant my-sm"/>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface font-label-sm text-label-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">person</span>
+                        Profile Settings
+                    </a>
+<a class="flex items-center gap-sm px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface font-label-sm text-label-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">payment</span>
+                        Payment Methods
+                    </a>
+</nav>
+</div>
+</aside>
+<!-- Orders List Container -->
+<section class="flex-1 flex flex-col gap-lg">
+<!-- Header & Filter -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-md mb-md">
+<div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface">My Purchases</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-base">Manage and track your recent orders.</p>
+</div>
+<div class="relative w-full md:w-auto">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full md:w-64 bg-surface-container-lowest border border-outline-variant text-on-surface font-body-md text-body-md rounded-lg pl-xl pr-md py-sm focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm outline-none" placeholder="Search orders..." type="text"/>
+</div>
+</div>
+<!-- Order Card 1: Delivered -->
+<article class="bg-surface-container-lowest rounded-xl level-1-shadow hover:level-2-shadow transition-shadow duration-300 p-md md:p-lg flex flex-col sm:flex-row gap-lg items-start border border-transparent hover:border-outline-variant">
+<!-- Product Image -->
+<div class="w-full sm:w-32 h-32 shrink-0 bg-surface-container rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A high-end, studio quality product photograph of a modern, sleek silver espresso machine sitting on a clean, light-colored marble countertop. The lighting is bright and professional, casting soft shadows that highlight the machine's polished metallic surfaces and contemporary design. The background is slightly out of focus, maintaining a minimal, corporate-modern aesthetic with cool, neutral tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL4vJVYjMWmZy2myIE6pulmFo7HXAZunmRsQxdKy7ttTeqPNn1HIQD2tq4Kpgg0mma6p-n_eT6RJQubzPaDu6vSm38_0EO7404xQeXgDhQsZawCh1HUtRsRYswNcd1xYU10yMV9BVSJ_bgYWXnqLFzys-z_1YJqEkWw65NJ3apbgxLUPCTmrxPQowhydAtN7Mx97K2nYlusPcSPww2cbYRPAF8i8vPbBjOZ1Ys0A6q07y3ejorg-m0JCM93aBjWdhvvLjoJZ7d84nR"/>
+</div>
+<!-- Details -->
+<div class="flex-1 flex flex-col gap-base min-w-0">
+<div class="flex justify-between items-start gap-md">
+<div>
+<span class="font-body-md text-body-md text-on-surface-variant uppercase tracking-wider text-[11px] font-semibold">Order #OM-992-841</span>
+<h2 class="font-headline-md text-headline-md text-on-surface truncate mt-base">Breville Barista Pro Espresso Machine</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Purchased on October 12, 2023</p>
+</div>
+<div class="hidden md:block">
+<span class="bg-secondary-fixed text-on-secondary-fixed rounded-lg px-sm py-xs font-price-display text-price-display inline-block">$849.95</span>
+</div>
+</div>
+<div class="flex items-center gap-md mt-sm md:mt-auto">
+<span class="bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-sm py-xs rounded-full flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Delivered
+                        </span>
+<span class="font-body-md text-body-md text-outline">Sold by: Premium Home Goods</span>
+</div>
+<!-- Mobile Price -->
+<div class="md:hidden mt-sm">
+<span class="bg-secondary-fixed text-on-secondary-fixed rounded-lg px-sm py-xs font-price-display text-price-display inline-block">$849.95</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-row sm:flex-col gap-sm w-full sm:w-auto shrink-0 mt-md sm:mt-0 pt-md sm:pt-0 border-t border-outline-variant sm:border-t-0 sm:border-l sm:pl-md">
+<button class="flex-1 sm:flex-none bg-surface-container-low text-primary font-label-sm text-label-sm px-md py-sm rounded-lg hover:bg-surface-variant transition-colors flex justify-center items-center gap-xs border border-transparent">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span> View Invoice
+                    </button>
+<button class="flex-1 sm:flex-none bg-transparent text-primary font-label-sm text-label-sm px-md py-sm rounded-lg border border-primary hover:bg-primary/5 transition-colors flex justify-center items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span> Message Seller
+                    </button>
+<button class="flex-1 sm:flex-none bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-md py-sm rounded-lg hover:bg-[#ebd300] transition-colors flex justify-center items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span> Buy Again
+                    </button>
+</div>
+</article>
+<!-- Order Card 2: In Transit -->
+<article class="bg-surface-container-lowest rounded-xl level-1-shadow hover:level-2-shadow transition-shadow duration-300 p-md md:p-lg flex flex-col sm:flex-row gap-lg items-start border border-transparent hover:border-outline-variant">
+<!-- Product Image -->
+<div class="w-full sm:w-32 h-32 shrink-0 bg-surface-container rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A flat-lay style photograph of a sleek, minimalist mechanical keyboard with matte black keycaps and a low-profile aluminum chassis. The lighting is crisp and even, simulating a premium unboxing experience. The background is a stark, clean white surface, emphasizing the technological precision and high-contrast corporate aesthetic of the device. Shadows are incredibly soft." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdJibf9bjbUe2hV6LuNxQ-ZmA78OwK_USsP29Pk9Z2fVQEGM6NbO_bOZy16SFUJzbqnUZZBKSw7Wxn5Rr_B6g41sFK1zGfamJBAo7Rjc2h2qdz5rpu-Hlr8leHJW4XqzEW4UQA0_Xd_-IGm3GkOkRZE2G9rnh9VmW6h-dLasKC3wqnERPyMlk_j9fzB1LtmxMYpdUPyjttaiO3r7c_jbf7HGq5nihU-_PnUKWJKlwA_wLzXnVAIdZaqlgXMnzkqtpe2SfiEitJ_9da"/>
+</div>
+<!-- Details -->
+<div class="flex-1 flex flex-col gap-base min-w-0">
+<div class="flex justify-between items-start gap-md">
+<div>
+<span class="font-body-md text-body-md text-on-surface-variant uppercase tracking-wider text-[11px] font-semibold">Order #OM-993-210</span>
+<h2 class="font-headline-md text-headline-md text-on-surface truncate mt-base">Keychron K3 Ultra-Slim Wireless Keyboard</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Purchased on October 24, 2023</p>
+</div>
+<div class="hidden md:block">
+<span class="bg-secondary-fixed text-on-secondary-fixed rounded-lg px-sm py-xs font-price-display text-price-display inline-block">$84.00</span>
+</div>
+</div>
+<div class="flex items-center gap-md mt-sm md:mt-auto">
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-sm py-xs rounded-full flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span> In Transit
+                        </span>
+<span class="font-body-md text-body-md text-outline">Est. Delivery: Oct 28</span>
+</div>
+<!-- Mobile Price -->
+<div class="md:hidden mt-sm">
+<span class="bg-secondary-fixed text-on-secondary-fixed rounded-lg px-sm py-xs font-price-display text-price-display inline-block">$84.00</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-row sm:flex-col gap-sm w-full sm:w-auto shrink-0 mt-md sm:mt-0 pt-md sm:pt-0 border-t border-outline-variant sm:border-t-0 sm:border-l sm:pl-md">
+<button class="flex-1 sm:flex-none bg-primary text-on-primary font-label-sm text-label-sm px-md py-sm rounded-lg hover:bg-primary/90 transition-colors flex justify-center items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">location_on</span> Track Package
+                    </button>
+<button class="flex-1 sm:flex-none bg-surface-container-low text-primary font-label-sm text-label-sm px-md py-sm rounded-lg hover:bg-surface-variant transition-colors flex justify-center items-center gap-xs border border-transparent">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span> View Invoice
+                    </button>
+</div>
+</article>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gradient-to-r from-[#0052ff] to-[#003dbb] full-width bottom-0 flat no shadows mt-auto">
+<div class="w-full px-lg py-xl flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto gap-lg md:gap-0">
+<div class="flex items-center gap-sm">
+<span class="font-headline-md text-headline-md font-bold text-white">OmniMarket</span>
+</div>
+<nav class="flex flex-wrap justify-center gap-md md:gap-lg">
+<a class="font-body-md text-body-md text-white/80 hover:text-white underline transition-all duration-200" href="#">About</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white underline transition-all duration-200" href="#">Help Center</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white underline transition-all duration-200" href="#">Safety</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white underline transition-all duration-200" href="#">Guidelines</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white underline transition-all duration-200" href="#">Policies</a>
+</nav>
+<div class="font-body-md text-body-md text-white/70 text-center md:text-right">
+                © 2024 OmniMarket Inc. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

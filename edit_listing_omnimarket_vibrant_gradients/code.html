@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Edit Listing - OmniMarket</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e2e2e6",
+                        "surface-container-highest": "#e2e2e6",
+                        "inverse-surface": "#2f3034",
+                        "surface": "#f9f9fd",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#5adf81",
+                        "tertiary-fixed": "#78fc9b",
+                        "primary-container": "#0866ff",
+                        "on-error-container": "#93000a",
+                        "outline": "#727687",
+                        "on-primary-container": "#f9f7ff",
+                        "on-background": "#1a1c1f",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "on-tertiary-fixed-variant": "#005224",
+                        "secondary-fixed-dim": "#dec800",
+                        "on-tertiary-container": "#e7ffe6",
+                        "primary-fixed": "#dbe1ff",
+                        "on-error": "#ffffff",
+                        "tertiary": "#006830",
+                        "surface-bright": "#f9f9fd",
+                        "secondary": "#6a5f00",
+                        "outline-variant": "#c2c6d8",
+                        "on-surface-variant": "#424656",
+                        "secondary-fixed": "#fde400",
+                        "secondary-container": "#fae100",
+                        "background": "#f9f9fd",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#00184a",
+                        "inverse-primary": "#b3c5ff",
+                        "surface-container": "#ededf1",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1a1c1f",
+                        "surface-container-low": "#f3f3f7",
+                        "on-secondary-container": "#6f6300",
+                        "on-secondary-fixed-variant": "#504700",
+                        "surface-tint": "#0054d7",
+                        "on-primary-fixed-variant": "#003fa5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d9dade",
+                        "on-secondary-fixed": "#201c00",
+                        "surface-container-high": "#e8e8ec",
+                        "primary": "#0050cd",
+                        "on-tertiary-fixed": "#00210b",
+                        "tertiary-container": "#00843e",
+                        "inverse-on-surface": "#f0f0f4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "base": "4px",
+                        "lg": "24px",
+                        "xs": "8px",
+                        "md": "16px",
+                        "xl": "32px",
+                        "sm": "12px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "price-display": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-xl": ["Inter"]
+                    },
+                    "fontSize": {
+                        "price-display": ["20px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface-container-low text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- Top Navigation (TopAppBar) -->
+<header class="bg-gradient-to-r from-[#0052ff] to-[#003dbb] shadow-md sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-lg py-md max-w-container-max mx-auto">
+<div class="flex items-center gap-lg">
+<a class="font-headline-md text-headline-md font-bold text-white" href="#">OmniMarket</a>
+<!-- Search Bar Placeholder for structural parity -->
+<div class="hidden md:flex items-center bg-white/20 rounded-[16px] px-md py-sm w-96 shadow-[0_10px_20px_-5px_rgba(28,30,33,0.12)]">
+<span class="material-symbols-outlined text-white mr-sm" data-icon="search">search</span>
+<input class="bg-transparent border-none outline-none w-full text-body-md text-white placeholder:text-white/70 focus:ring-0" placeholder="Search items..." type="text"/>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-white/80 hover:text-white hover:bg-white/10 px-sm py-xs rounded transition-colors duration-200" href="#">Electronics</a>
+<a class="text-white/80 hover:text-white hover:bg-white/10 px-sm py-xs rounded transition-colors duration-200" href="#">Home &amp; Garden</a>
+<a class="text-white/80 hover:text-white hover:bg-white/10 px-sm py-xs rounded transition-colors duration-200" href="#">Fashion</a>
+<a class="text-white/80 hover:text-white hover:bg-white/10 px-sm py-xs rounded transition-colors duration-200" href="#">Motors</a>
+</nav>
+<div class="flex items-center gap-md">
+<button class="text-white/80 hover:text-white hover:bg-white/10 p-xs rounded-full transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="messages">chat</span>
+</button>
+<button class="text-white/80 hover:text-white hover:bg-white/10 p-xs rounded-full transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="text-white/80 hover:text-white hover:bg-white/10 p-xs rounded-full transition-colors duration-200">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+<button class="bg-[#FFE600] text-[#1C1E21] font-label-sm px-md py-sm rounded-lg hover:bg-[#fae100] transition-colors active:scale-95 duration-150">Sell</button>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-lg py-xl">
+<div class="max-w-3xl mx-auto bg-surface-container-lowest rounded-xl shadow-[0_10px_20px_-5px_rgba(28,30,33,0.12)] p-xl">
+<div class="mb-lg flex justify-between items-center">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Edit Listing</h1>
+<a class="font-body-md text-body-md text-error hover:underline flex items-center gap-xs" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+                    Deactivate Listing
+                </a>
+</div>
+<form class="space-y-xl">
+<!-- Photos Section -->
+<section>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm">Photos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Manage the images for your listing. High-quality photos increase sales.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+<!-- Image 1 -->
+<div class="relative group rounded-lg overflow-hidden aspect-square border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A beautifully lit close-up of a vintage 35mm film camera resting on a rustic wooden table. The lighting is soft and natural, coming from a nearby window, casting gentle shadows. The camera body is brushed silver metal with textured black leatherette, showing minor signs of use that add character. The lens is sharp and clearly visible. The overall mood is nostalgic and premium, fitting a modern online marketplace aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMf-fnaeDh7Ky36X4ybzCPEcF7A3_8hELGQr86Ei16D5SYaWOw4ca5yteJkaYDD5L24s4-szm5ZfU6kVNnwB_LQQzCoWAKZzb5cN_dlK-hYjK_yP-xCUE4pxy_XAwujOZ_V6VyRf21_B01mfLAaY1dtAbgzdHwLprZj_BL7jJ4Bj56RMcaKI6F1rgMDdcevzT5xlv__UB2GzygJiozGTNzAR04JnUa7oTbbedKGVpe2oVR2hXC7Sg8FGMKQ_Ft_-Yalq0RryKULVek"/>
+<button class="absolute top-xs right-xs bg-surface/80 hover:bg-error-container text-on-surface hover:text-error rounded-full p-xs backdrop-blur-sm transition-colors duration-200" title="Remove photo" type="button">
+<span class="material-symbols-outlined text-[20px]" data-icon="close">close</span>
+</button>
+</div>
+<!-- Image 2 -->
+<div class="relative group rounded-lg overflow-hidden aspect-square border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A detailed shot focusing on the top dials and mechanisms of a vintage film camera. The metallic dials are intricate, with etched numbers and symbols. The lighting highlights the texture of the metal and the mechanical precision of the vintage equipment. The background is a soft, out-of-focus neutral tone, keeping the focus entirely on the camera details. Corporate modern aesthetic, clean and crisp." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAlrsHtr_gX4P2TFxdeFLuRUnqi6N3BQL10v58DZhZOcC2jkuvn1M6NDw97SmNlnrgSTrk7akpsxVbKmvz0dw19CaKsyxvBy1LwBRSRxL7axLc8wZHRBhchalgiMXLEIOMj6J8d1NhzFMU8P_0KiOIj61E2A3KFYGUWV8zCAkti8R7-tB7ZjLU9QXrN_5fhfrKyzz3I5mN-u7YSO9I6q5RwkSsJY4j2Fa4-wbxTcH7L9U2geAnNaSHW2EGd-ShRIHlhYGZA1ErR2fL"/>
+<button class="absolute top-xs right-xs bg-surface/80 hover:bg-error-container text-on-surface hover:text-error rounded-full p-xs backdrop-blur-sm transition-colors duration-200" title="Remove photo" type="button">
+<span class="material-symbols-outlined text-[20px]" data-icon="close">close</span>
+</button>
+</div>
+<!-- Image 3 -->
+<div class="relative group rounded-lg overflow-hidden aspect-square border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A wide shot of a vintage film camera accompanied by a leather carrying strap and an extra lens, laid out neatly on a clean white surface. The layout is organized, almost like a flat-lay, emphasizing a complete kit ready for a buyer. The lighting is bright and even, typical of high-quality product photography for an online marketplace. Clear, professional, and trustworthy visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC50OkcS9wMX5JKSO7bEd2zTNQRiTdA1eUKGetkIX1xMKWBcTsSvR4Hr8Uojr3-1JrBuYm8KkBLedbD4FbB5fEUdqF9XZRYtZhrKsfZkdl2ZZCJV3Vhjzq365KqB_YFThMpdG1By0OCUOgfmO1Otg4mhGH7q5nh_ZTxiZQk--9brvwrWC8WuQ03Y-D-dgmF5wMacA2troFWH_rZax5jky1IF9a8CQr3DUP-lZNLBRJ3WxPaccGyqDF7yX0dIzw4c82Ccyxe1A6ABREs"/>
+<button class="absolute top-xs right-xs bg-surface/80 hover:bg-error-container text-on-surface hover:text-error rounded-full p-xs backdrop-blur-sm transition-colors duration-200" title="Remove photo" type="button">
+<span class="material-symbols-outlined text-[20px]" data-icon="close">close</span>
+</button>
+</div>
+<!-- Add Photo Button -->
+<button class="flex flex-col items-center justify-center aspect-square rounded-lg border-2 border-dashed border-outline hover:border-primary hover:bg-primary-fixed/20 transition-colors duration-200 text-on-surface-variant hover:text-primary" type="button">
+<span class="material-symbols-outlined text-[32px] mb-xs" data-icon="add_a_photo">add_a_photo</span>
+<span class="font-label-sm text-label-sm">Add Photo</span>
+</button>
+</div>
+</section>
+<hr class="border-t border-surface-variant"/>
+<!-- Details Section -->
+<section class="space-y-md">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm">Listing Details</h2>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-xs" for="title">Title</label>
+<input class="w-full rounded-lg border border-outline-variant px-md py-sm font-body-md text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="title" type="text" value="Mint Condition Vintage 35mm SLR Camera with 50mm Lens"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-xs" for="category">Category</label>
+<select class="w-full rounded-lg border border-outline-variant px-md py-sm font-body-md text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors appearance-none bg-surface-container-lowest" id="category">
+<option value="electronics">Electronics &gt; Cameras</option>
+<option value="antiques">Antiques &amp; Collectibles</option>
+<option value="misc">Miscellaneous</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-xs" for="description">Description</label>
+<textarea class="w-full rounded-lg border border-outline-variant px-md py-sm font-body-md text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors resize-y" id="description" rows="5">Fully tested and working perfectly. Lens is clean with no fungus or scratches. Light meter is accurate. Comes with original leather strap and lens cap. Perfect for beginners or collectors looking for a reliable analog shooter.</textarea>
+</div>
+</section>
+<hr class="border-t border-surface-variant"/>
+<!-- Pricing Section -->
+<section>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm">Pricing</h2>
+<div class="bg-primary-fixed/30 rounded-lg p-lg border border-primary-fixed-dim">
+<label class="block font-label-sm text-label-sm text-on-primary-fixed mb-xs" for="price">Price ($)</label>
+<div class="relative">
+<span class="absolute left-md top-1/2 -translate-y-1/2 font-price-display text-price-display text-on-surface">$</span>
+<input class="w-full rounded-lg border border-outline-variant pl-xl pr-md py-sm font-price-display text-price-display text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors bg-surface-container-lowest" id="price" type="number" value="185"/>
+</div>
+</div>
+</section>
+<!-- Actions -->
+<div class="flex justify-end gap-md pt-md">
+<button class="px-lg py-sm rounded-lg font-label-sm text-label-sm text-primary hover:bg-primary-fixed/20 transition-colors border border-outline-variant" type="button">Cancel</button>
+<button class="bg-[#FFE600] text-[#1C1E21] px-xl py-sm rounded-[12px] font-label-sm text-label-sm font-bold shadow-[0_10px_20px_-5px_rgba(28,30,33,0.12)] hover:bg-[#fae100] active:scale-95 transition-all duration-150" type="submit">Save Changes</button>
+</div>
+</form>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-gradient-to-r from-[#0052ff] to-[#003dbb] mt-auto">
+<div class="w-full px-lg py-xl flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto border-t border-white/20">
+<div class="font-headline-md text-headline-md font-bold text-white mb-md md:mb-0">
+                OmniMarket
+            </div>
+<nav class="flex flex-wrap justify-center gap-md mb-md md:mb-0">
+<a class="text-white/80 hover:text-white hover:underline font-body-md text-body-md transition-all duration-200" href="#">About</a>
+<a class="text-white/80 hover:text-white hover:underline font-body-md text-body-md transition-all duration-200" href="#">Help Center</a>
+<a class="text-white/80 hover:text-white hover:underline font-body-md text-body-md transition-all duration-200" href="#">Safety</a>
+<a class="text-white/80 hover:text-white hover:underline font-body-md text-body-md transition-all duration-200" href="#">Guidelines</a>
+<a class="text-white/80 hover:text-white hover:underline font-body-md text-body-md transition-all duration-200" href="#">Policies</a>
+</nav>
+<div class="text-white/80 font-body-md text-body-md">
+                © 2024 OmniMarket Inc. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

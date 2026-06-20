@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sell Your Item - OmniMarket</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts for Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e2e2e6",
+                    "surface-container-highest": "#e2e2e6",
+                    "inverse-surface": "#2f3034",
+                    "surface": "#f9f9fd",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#5adf81",
+                    "tertiary-fixed": "#78fc9b",
+                    "primary-container": "#0866ff",
+                    "on-error-container": "#93000a",
+                    "outline": "#727687",
+                    "on-primary-container": "#f9f7ff",
+                    "on-background": "#1a1c1f",
+                    "on-primary": "#ffffff",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "on-tertiary-fixed-variant": "#005224",
+                    "secondary-fixed-dim": "#dec800",
+                    "on-tertiary-container": "#e7ffe6",
+                    "primary-fixed": "#dbe1ff",
+                    "on-error": "#ffffff",
+                    "tertiary": "#006830",
+                    "surface-bright": "#f9f9fd",
+                    "secondary": "#6a5f00",
+                    "outline-variant": "#c2c6d8",
+                    "on-surface-variant": "#424656",
+                    "secondary-fixed": "#fde400",
+                    "secondary-container": "#fae100",
+                    "background": "#f9f9fd",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed": "#00184a",
+                    "inverse-primary": "#b3c5ff",
+                    "surface-container": "#ededf1",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1a1c1f",
+                    "surface-container-low": "#f3f3f7",
+                    "on-secondary-container": "#6f6300",
+                    "on-secondary-fixed-variant": "#504700",
+                    "surface-tint": "#0054d7",
+                    "on-primary-fixed-variant": "#003fa5",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#d9dade",
+                    "on-secondary-fixed": "#201c00",
+                    "surface-container-high": "#e8e8ec",
+                    "primary": "#0050cd",
+                    "on-tertiary-fixed": "#00210b",
+                    "tertiary-container": "#00843e",
+                    "inverse-on-surface": "#f0f0f4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "base": "4px",
+                    "lg": "24px",
+                    "xs": "8px",
+                    "md": "16px",
+                    "xl": "32px",
+                    "sm": "12px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "price-display": [
+                            "Inter"
+                    ],
+                    "label-sm": [
+                            "Inter"
+                    ],
+                    "headline-lg-mobile": [
+                            "Inter"
+                    ],
+                    "headline-md": [
+                            "Inter"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "headline-lg": [
+                            "Inter"
+                    ],
+                    "headline-xl": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "price-display": [
+                            "20px",
+                            {
+                                    "lineHeight": "24px",
+                                    "letterSpacing": "0em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "letterSpacing": "0.02em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-xl": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #c2c6d8;
+            border-radius: 20px;
+        }
+        
+        /* Focus ring utility to match brand */
+        .brand-focus:focus-within {
+            outline: none;
+            border-color: #0050cd;
+            box-shadow: 0 0 0 1px #0050cd;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-low text-on-background min-h-screen flex flex-col font-body-md antialiased">
+<!-- TopNavBar -->
+<header class="bg-gradient-to-r from-[#0052ff] to-[#003dbb] sticky z-50 shadow-[0_10px_20px_-5px_rgba(28,30,33,0.12)] w-full top-0">
+<div class="flex justify-between items-center w-full px-lg py-md max-w-container-max mx-auto">
+<!-- Brand Logo & Search -->
+<div class="flex items-center gap-xl flex-1">
+<a class="font-headline-md text-headline-md font-bold text-white active:scale-95 transition-transform duration-150" href="#">OmniMarket</a>
+<div class="hidden md:flex flex-1 max-w-2xl items-center bg-surface-container-lowest rounded-xl shadow-[0_10px_20px_-5px_rgba(28,30,33,0.12)] border border-outline-variant h-12 overflow-hidden brand-focus transition-colors">
+<button class="flex items-center gap-base px-md border-r border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors h-full">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+<span class="font-label-sm text-label-sm">Location</span>
+<span class="material-symbols-outlined text-[16px]">arrow_drop_down</span>
+</button>
+<input class="flex-1 border-none bg-transparent px-md text-on-surface focus:ring-0 font-body-md text-body-md h-full placeholder:text-on-surface-variant/60" placeholder="Search for items..." type="text"/>
+<button class="bg-primary text-on-primary h-full px-lg hover:bg-primary/90 transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="hidden lg:flex items-center gap-lg mx-xl">
+<a class="font-body-md text-body-md text-white/80 hover:text-white transition-colors duration-200" href="#">Electronics</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white transition-colors duration-200" href="#">Home &amp; Garden</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white transition-colors duration-200" href="#">Fashion</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white transition-colors duration-200" href="#">Motors</a>
+</nav>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-md">
+<button class="font-body-md text-body-md font-semibold text-white px-md py-sm rounded-xl hover:bg-white/10 hover:text-white transition-colors duration-200 hidden md:block">Messages</button>
+<div class="flex items-center gap-xs text-white">
+<button class="p-sm rounded-full hover:bg-white/10 transition-colors duration-200 text-white active:scale-95 flex items-center justify-center">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-sm rounded-full hover:bg-white/10 transition-colors duration-200 text-white active:scale-95 flex items-center justify-center">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+<!-- Primary Action - Active State for this flow -->
+<button class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold px-lg py-sm rounded-xl hover:bg-secondary-container transition-colors duration-200 active:scale-95 shadow-sm">Sell</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 w-full px-md py-xl md:px-lg md:py-[48px] max-w-container-max mx-auto flex justify-center">
+<!-- Form Container (Glassmorphism inspired, Level 1 Shadow) -->
+<div class="w-full max-w-[800px] bg-surface-container-lowest rounded-xl shadow-[0_10px_20px_-5px_rgba(28,30,33,0.12)] border border-outline-variant/30 overflow-hidden">
+<div class="p-lg md:p-xl border-b border-surface-container-high bg-surface-bright/50">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background">Sell Your Item</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Provide details about your item to reach potential buyers quickly.</p>
+</div>
+<form class="p-lg md:p-xl flex flex-col gap-xl">
+<!-- Section: Photos -->
+<section>
+<div class="flex justify-between items-end mb-md">
+<h2 class="font-headline-md text-headline-md text-on-background">Photos</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">0 / 10 added</span>
+</div>
+<div class="w-full border-2 border-dashed border-outline-variant rounded-xl bg-surface hover:bg-surface-container-low transition-colors flex flex-col items-center justify-center py-[48px] px-lg cursor-pointer group relative overflow-hidden">
+<input accept="image/*" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" multiple="" type="file"/>
+<div class="w-[64px] h-[64px] rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary group-hover:bg-primary-container/20 transition-colors mb-md">
+<span class="material-symbols-outlined text-[32px] font-light">add_photo_alternate</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-background font-semibold text-center">Drag and drop photos here</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs text-center">or click to browse from your device</p>
+<p class="font-label-sm text-label-sm text-outline mt-md text-center">Supported formats: JPG, PNG, HEIC. Max 5MB per file.</p>
+</div>
+</section>
+<!-- Section: Item Details -->
+<section>
+<h2 class="font-headline-md text-headline-md text-on-background mb-md">Item Details</h2>
+<div class="flex flex-col gap-lg">
+<!-- Title -->
+<div>
+<label class="font-label-sm text-label-sm text-on-background block mb-sm" for="item-title">Title <span class="text-error">*</span></label>
+<input class="w-full bg-surface text-on-surface border border-outline-variant rounded-xl px-md py-[14px] font-body-md text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors placeholder:text-on-surface-variant/60" id="item-title" placeholder="e.g. Vintage Leather Jacket, Excellent Condition" type="text"/>
+</div>
+<!-- Grid for Category & Condition -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+<!-- Category -->
+<div>
+<label class="font-label-sm text-label-sm text-on-background block mb-sm" for="item-category">Category <span class="text-error">*</span></label>
+<div class="relative">
+<select class="w-full bg-surface text-on-surface border border-outline-variant rounded-xl px-md py-[14px] font-body-md text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors appearance-none cursor-pointer" id="item-category">
+<option disabled="" selected="" value="">Select a category...</option>
+<option value="electronics">Electronics</option>
+<option value="home">Home &amp; Garden</option>
+<option value="fashion">Fashion</option>
+<option value="motors">Motors</option>
+<option value="collectibles">Collectibles</option>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center px-md pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Condition -->
+<div>
+<label class="font-label-sm text-label-sm text-on-background block mb-sm">Condition <span class="text-error">*</span></label>
+<div class="relative">
+<select class="w-full bg-surface text-on-surface border border-outline-variant rounded-xl px-md py-[14px] font-body-md text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors appearance-none cursor-pointer" id="item-condition">
+<option disabled="" selected="" value="">Select condition...</option>
+<option value="new">New (Unused)</option>
+<option value="like-new">Used - Like New</option>
+<option value="good">Used - Good</option>
+<option value="fair">Used - Fair</option>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center px-md pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Description -->
+<div>
+<label class="font-label-sm text-label-sm text-on-background block mb-sm" for="item-description">Description <span class="text-error">*</span></label>
+<textarea class="w-full bg-surface text-on-surface border border-outline-variant rounded-xl px-md py-[14px] font-body-md text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors placeholder:text-on-surface-variant/60 resize-y custom-scrollbar" id="item-description" placeholder="Describe your item in detail. Mention any flaws, specific dimensions, or unique features..." rows="5"></textarea>
+</div>
+</div>
+</section>
+<!-- Section: Pricing -->
+<section>
+<h2 class="font-headline-md text-headline-md text-on-background mb-md">Pricing</h2>
+<div class="bg-secondary-container/10 border border-secondary-container/30 rounded-xl p-lg md:p-xl flex flex-col gap-lg relative overflow-hidden">
+<!-- Decorative subtle gradient for the yellow block -->
+<div class="absolute inset-0 bg-gradient-to-br from-secondary-fixed/5 to-transparent pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-lg">
+<div class="flex-1 w-full md:max-w-[240px]">
+<label class="font-label-sm text-label-sm text-on-background block mb-sm" for="item-price">Price</label>
+<div class="relative brand-focus rounded-xl">
+<div class="absolute inset-y-0 left-0 pl-md flex items-center pointer-events-none">
+<span class="font-price-display text-price-display text-on-surface-variant">$</span>
+</div>
+<input class="w-full bg-surface-container-lowest text-on-surface border border-outline-variant rounded-xl pl-[40px] pr-md py-[14px] font-price-display text-price-display focus:ring-0 focus:border-transparent outline-none transition-colors" id="item-price" min="0" placeholder="0.00" step="0.01" type="number"/>
+</div>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto md:gap-lg bg-surface-container-lowest py-sm px-md rounded-xl border border-outline-variant shadow-sm">
+<div>
+<p class="font-body-md text-body-md font-semibold text-on-background">Accept Offers</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-normal">Allow buyers to negotiate</p>
+</div>
+<!-- Toggle Switch -->
+<label class="relative inline-flex items-center cursor-pointer ml-lg">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Submit Area -->
+<div class="pt-lg border-t border-surface-container-high mt-sm">
+<button class="w-full bg-secondary-fixed text-on-secondary-fixed font-headline-md text-headline-md font-bold py-[16px] px-xl rounded-xl hover:bg-secondary-container transition-all duration-200 active:scale-[0.98] shadow-sm flex items-center justify-center gap-sm" type="button">
+<span>List Your Item</span>
+<span class="material-symbols-outlined text-[24px]">rocket_launch</span>
+</button>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center mt-md font-normal">
+                        By listing, you agree to our <a class="text-primary hover:underline" href="#">Terms of Service</a> and <a class="text-primary hover:underline" href="#">Seller Policies</a>.
+                    </p>
+</div>
+</form>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-gradient-to-r from-[#0052ff] to-[#003dbb] w-full mt-auto">
+<div class="w-full px-lg py-xl flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto gap-lg">
+<div class="flex flex-col items-center md:items-start gap-xs">
+<span class="font-headline-md text-headline-md font-bold text-white">OmniMarket</span>
+<span class="font-body-md text-body-md text-white/80">© 2024 OmniMarket Inc. All rights reserved.</span>
+</div>
+<nav class="flex flex-wrap justify-center items-center gap-md md:gap-lg">
+<a class="font-body-md text-body-md text-white/80 hover:text-white underline transition-all duration-200" href="#">About</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white underline transition-all duration-200" href="#">Help Center</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white underline transition-all duration-200" href="#">Safety</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white underline transition-all duration-200" href="#">Guidelines</a>
+<a class="font-body-md text-body-md text-white/80 hover:text-white underline transition-all duration-200" href="#">Policies</a>
+</nav>
+</div>
+</footer>
+</body></html>
