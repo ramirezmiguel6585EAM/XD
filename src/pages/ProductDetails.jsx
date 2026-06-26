@@ -21,10 +21,7 @@ export default function ProductDetails() {
     return (
       <div className="flex-1 flex flex-col items-center justify-center py-[100px] text-center max-w-container-max mx-auto px-md">
         <span className="material-symbols-outlined text-[80px] text-error">error</span>
-        <h2 className="font-headline-lg font-bold text-on-background mt-md">Item Not Found</h2>
-        <p className="text-body-lg text-on-surface-variant max-w-md mt-xs">
-          The listing you are trying to view does not exist or has been removed by the owner.
-        </p>
+        <h2 className="font-headline-lg font-bold text-on-background mt-md text-center">The requested item could not be found on our platform</h2>
         <Link
           to="/"
           className="mt-lg bg-primary text-on-primary font-bold px-lg py-sm rounded-xl hover:bg-primary/95 transition-all shadow-md active:scale-95"

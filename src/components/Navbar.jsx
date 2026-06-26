@@ -50,15 +50,6 @@ export default function Navbar() {
               value={localSearch}
               onChange={(e) => setLocalSearch(e.target.value)}
             />
-            <div className="w-[1px] h-2/3 bg-white/20 mx-xs"></div>
-            <button
-              type="button"
-              onClick={() => navigate('/search')}
-              className="pr-md pl-xs text-white/80 flex items-center gap-xs text-[13px] font-semibold h-full hover:bg-white/10 transition-colors cursor-pointer"
-            >
-              <span>Map</span>
-              <span className="material-symbols-outlined text-[18px]">location_on</span>
-            </button>
           </div>
         </form>
 

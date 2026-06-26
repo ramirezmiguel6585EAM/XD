@@ -120,10 +120,7 @@ export default function Checkout() {
       return (
         <div className="flex-1 flex flex-col items-center justify-center py-[100px] text-center max-w-container-max mx-auto px-md">
           <span className="material-symbols-outlined text-[80px] text-error">error</span>
-          <h2 className="font-headline-lg font-bold text-on-background mt-md">Item Not Found</h2>
-          <p className="text-body-lg text-on-surface-variant max-w-md mt-xs">
-            The listing you are trying to purchase does not exist or has been sold.
-          </p>
+          <h2 className="font-headline-lg font-bold text-on-background mt-md text-center">The requested item could not be found on our platform</h2>
           <Link to="/" className="mt-lg bg-primary text-on-primary font-bold px-lg py-sm rounded-xl hover:bg-primary/95 transition-all shadow-md">
             Return to Shop
           </Link>
@@ -134,10 +131,7 @@ export default function Checkout() {
     return (
       <div className="flex-1 flex flex-col items-center justify-center py-[100px] text-center max-w-container-max mx-auto px-md">
         <span className="material-symbols-outlined text-[80px] text-on-surface-variant/40">shopping_cart_off</span>
-        <h2 className="font-headline-lg font-bold text-on-background mt-md">Your Cart is Empty</h2>
-        <p className="text-body-lg text-on-surface-variant max-w-md mt-xs">
-          You don't have any items ready for checkout. Add items to your cart to see them here!
-        </p>
+        <h2 className="font-headline-lg font-bold text-on-background mt-md text-center">Your shopping cart is currently empty and has no items</h2>
         <Link to="/" className="mt-lg bg-primary text-on-primary font-bold px-lg py-sm rounded-xl hover:bg-primary/95 transition-all shadow-md">
           Start Shopping
         </Link>

@@ -28,6 +28,10 @@ export const AppProvider = ({ children }) => {
       }
     }
 
+    // Filter out deleted product IDs
+    const deletedIds = ["25", "26", "30", "31", "32", "34", "35", "36", "40", "43"];
+    loadedProducts = loadedProducts.filter(p => p && !deletedIds.includes(p.id));
+ 
     // Clean expired googleusercontent URLs from loaded data
     return loadedProducts.map(p => {
       const updatedImages = Array.isArray(p.images)

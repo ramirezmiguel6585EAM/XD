@@ -131,10 +131,7 @@ export default function SellerProfile() {
           sellerListings.length === 0 ? (
             <div className="text-center py-[80px] bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center">
               <span className="material-symbols-outlined text-[64px] text-on-surface-variant/40">inventory_2</span>
-              <h3 className="font-bold text-headline-md mt-md text-on-background">No active listings</h3>
-              <p className="text-body-md text-on-surface-variant max-w-sm mt-xs">
-                This seller has no items listed for sale at the moment.
-              </p>
+              <h3 className="font-bold text-headline-md mt-md text-on-background text-center">This seller has no active listings published at the moment</h3>
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-lg">
@@ -147,10 +144,7 @@ export default function SellerProfile() {
           reviews.length === 0 ? (
             <div className="text-center py-[80px] bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center">
               <span className="material-symbols-outlined text-[64px] text-on-surface-variant/40">rate_review</span>
-              <h3 className="font-bold text-headline-md mt-md text-on-background">No reviews yet</h3>
-              <p className="text-body-md text-on-surface-variant max-w-sm mt-xs">
-                This seller has not received any transaction feedback reviews yet.
-              </p>
+              <h3 className="font-bold text-headline-md mt-md text-on-background text-center">This seller has not received any feedback reviews yet</h3>
             </div>
           ) : (
             <div className="flex flex-col gap-md max-w-3xl">
